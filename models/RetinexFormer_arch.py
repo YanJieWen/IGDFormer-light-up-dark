@@ -152,14 +152,14 @@ class RetinexFormer(nn.Module):
 
 
 #
-if __name__ == '__main__':
-    from thop import profile
-    from thop import clever_format
-    model = RetinexFormer(stage=1,n_feat=40,num_blocks=[1,2,2],att_type='Mixing_attention_new').cuda()
-    x = torch.randn((1,3,256,256)).cuda()
-    # for name, param in model.named_parameters():
-    #     if param.grad is None:
-    #         print(name)
-    flops, params = profile(model, inputs=(x,))
-    flops_, params_ = clever_format([flops, params], "%.3f")
-    print(f'GFLOPS-->{flops_}\t Params-->{params_}')
+# if __name__ == '__main__':
+#     from thop import profile
+#     from thop import clever_format
+#     model = RetinexFormer(stage=1,n_feat=40,num_blocks=[1,2,2],att_type='Mixing_attention_new').cuda()
+#     x = torch.randn((1,3,256,256)).cuda()
+#     # for name, param in model.named_parameters():
+#     #     if param.grad is None:
+#     #         print(name)
+#     flops, params = profile(model, inputs=(x,))
+#     flops_, params_ = clever_format([flops, params], "%.3f")
+#     print(f'GFLOPS-->{flops_}\t Params-->{params_}')
