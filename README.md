@@ -7,4 +7,4 @@ Dual attention Transformer based on illumination-guided for low-light image enha
 
 Central south university
 
-[![Model](https://img.shields.io/badge/GoogleDrive-Weight-blue)]([https://drive.google.com/drive/folders/1Rjb8dpyNnvvr0XLvIX9fg8Hdru_MhMCj?usp=sharing](https://drive.google.com/drive/folders/1ykdAAcm26T_wsI8sT32imPMToIhL7GwD?usp=drive_link)https://drive.google.com/drive/folders/1ykdAAcm26T_wsI8sT32imPMToIhL7GwD?usp=drive_link)
+[![Model](https://img.shields.io/badge/GoogleDrive-Weight-blue)](https://drive.google.com/drive/folders/1ykdAAcm26T_wsI8sT32imPMToIhL7GwD?usp=drive_link)
