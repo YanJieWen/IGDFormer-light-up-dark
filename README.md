@@ -12,4 +12,4 @@ Central south university
 
 ## Overall Architecture
 
-<img src="9-1.jpg" alt="Architecture" style="zoom:20%;" />
+<img src="3-1.jpg" alt="Architecture" style="zoom:20%;" />
