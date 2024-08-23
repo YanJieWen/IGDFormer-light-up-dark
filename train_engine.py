@@ -147,7 +147,7 @@ if __name__ == '__main__':
     parser.add_argument('--resume', default='', type=str, help='继续训练的权重路径')
     parser.add_argument('--start_epoch', default=0, type=int, help='继续训练的轮数')
     parser.add_argument('--num_epoch', default=100, type=int, help='训练总轮数')
-    parser.add_argument('--mini_gt_size', default=256, type=int, help='最小的尺寸')
+    parser.add_argument('--mini_gt_size', default=128, type=int, help='最小的尺寸')
     parser.add_argument('--iters', default=300000, type=int, help='更新的总次数')
     parser.add_argument('--cycle_iter', default=[92000,208000], type=int, help='学习率调度参数')
     parser.add_argument('--att_type', default='Mixing_attention_new', type=str,help="['IGAB','Restormer','Swin_Transformer','Mixing_attention','Mixing_attention_new']")
