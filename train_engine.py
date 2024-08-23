@@ -79,7 +79,8 @@ def main(args):
         start_epoch = checkpoint['epoch'] + 1
     print("the training process from epoch{}...".format(start_epoch))
     #包裹加速器
-    model,optimizer,train_loader,lr_scheduler,val_loader = accelerator.prepare(model,optimizer,train_loader,lr_scheduler,val_loader)
+    model,optimizer,train_loader,lr_scheduler = accelerator.prepare(model,optimizer,train_loader,lr_scheduler)
+    # model,optimizer,train_loader,lr_scheduler,val_loader = accelerator.prepare(model,optimizer,train_loader,lr_scheduler,val_loader)
 
 
     #开展训练
@@ -138,8 +139,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data_root',default='./parired_datasets/sid/',type=str,help='数据根目录')
     parser.add_argument('--data_type', default='SID', type=str, help='读取的数据类型')
-    parser.add_argument('--batch_size', default=1, type=int, help='批大小')
-    parser.add_argument('--gt_size', default=256, type=int, help='输入图像的尺寸大小')
+    parser.add_argument('--batch_size', default=4, type=int, help='批大小')
+    parser.add_argument('--gt_size', default=128, type=int, help='输入图像的尺寸大小')
     parser.add_argument('--mean', default=None, help='均值')
     parser.add_argument('--std', default=None, help='标准差')
     parser.add_argument('--weights_save', default='./save_weights/', type=str, help='存放权重的根目录')
